@@ -16,7 +16,7 @@
 				<textarea id="content" name="content" rows="4" cols="50" required></textarea>
 			</div>
 			<div>
-				<label for="author">投稿者:</label><br> <input type="text"
+				<label for="author">投稿者:(255文字以内にしてください)</label><br> <input type="text"
 					id="author" name="author" required>
 			</div>
 			<div>

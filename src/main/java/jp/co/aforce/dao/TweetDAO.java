@@ -34,6 +34,14 @@ public class TweetDAO extends DAO {
 	//ツイートを新規投稿するメソッド
 	public void addTweet(String content, String author) throws Exception {
 		Connection con = getConnection();
+		
+		/*文字数が255文字以内しか登録できない*/
+		/*if(author<=255 || author!=null) {
+			String sql ="INSERT INTO tweets (content, author) VALUES (?, ?)";
+		}else {
+			
+		}*/
+		
 		String sql = "INSERT INTO tweets (content, author) VALUES (?, ?)";
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, content);
